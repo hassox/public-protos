@@ -1,0 +1,504 @@
+package public.international;
+
+/**  ISO 3166-1 alpha-2 codes */
+enum CountryCode {
+  /** Andorra */
+  AD = 1;
+  /** United Arab Emirates */
+  AE = 2;
+  /** Afghanistan */
+  AF = 3;
+  /** Antigua and Barbuda */
+  AG = 4;
+  /** Anguilla */
+  AI = 5;
+  /** Albania */
+  AL = 6;
+  /** Armenia */
+  AM = 7;
+  /** Angola */
+  AO = 8;
+  /** Antarctica */
+  AQ = 9;
+  /** Argentina */
+  AR = 10;
+  /** American Samoa */
+  AS = 11;
+  /** Austria */
+  AT = 12;
+  /** Australia */
+  AU = 13;
+  /** Aruba */
+  AW = 14;
+  /** Åland Islands */
+  AX = 15;
+  /** Azerbaijan */
+  AZ = 16;
+  /** Bosnia and Herzegovina */
+  BA = 17;
+  /** Barbados */
+  BB = 18;
+  /** Bangladesh */
+  BD = 19;
+  /** Belgium */
+  BE = 20;
+  /** Burkina Faso */
+  BF = 21;
+  /** Bulgaria */
+  BG = 22;
+  /** Bahrain */
+  BH = 23;
+  /** Burundi */
+  BI = 24;
+  /** Benin */
+  BJ = 25;
+  /** Saint Barthélemy */
+  BL = 26;
+  /** Bermuda */
+  BM = 27;
+  /** Brunei Darussalam */
+  BN = 28;
+  /** Bolivia, Plurinational State of */
+  BO = 29;
+  /** Bonaire, Sint Eustatius and Saba */
+  BQ = 30;
+  /** Brazil */
+  BR = 31;
+  /** Bahamas */
+  BS = 32;
+  /** Bhutan */
+  BT = 33;
+  /** Bouvet Island */
+  BV = 34;
+  /** Botswana */
+  BW = 35;
+  /** Belarus */
+  BY = 36;
+  /** Belize */
+  BZ = 37;
+  /** Canada */
+  CA = 38;
+  /** Cocos (Keeling) Islands */
+  CC = 39;
+  /** Congo, the Democratic Republic of the */
+  CD = 40;
+  /** Central African Republic */
+  CF = 41;
+  /** Congo */
+  CG = 42;
+  /** Switzerland */
+  CH = 43;
+  /** Côte d'Ivoire */
+  CI = 44;
+  /** Cook Islands */
+  CK = 45;
+  /** Chile */
+  CL = 46;
+  /** Cameroon */
+  CM = 47;
+  /** China */
+  CN = 48;
+  /** Colombia */
+  CO = 49;
+  /** Costa Rica */
+  CR = 50;
+  /** Cuba */
+  CU = 51;
+  /** Cabo Verde */
+  CV = 52;
+  /** Curaçao */
+  CW = 53;
+  /** Christmas Island */
+  CX = 54;
+  /** Cyprus */
+  CY = 55;
+  /** Czech Republic */
+  CZ = 56;
+  /** Germany */
+  DE = 57;
+  /** Djibouti */
+  DJ = 58;
+  /** Denmark */
+  DK = 59;
+  /** Dominica */
+  DM = 60;
+  /** Dominican Republic */
+  DO = 61;
+  /** Algeria */
+  DZ = 62;
+  /** Ecuador */
+  EC = 63;
+  /** Estonia */
+  EE = 64;
+  /** Egypt */
+  EG = 65;
+  /** Western Sahara */
+  EH = 66;
+  /** Eritrea */
+  ER = 67;
+  /** Spain */
+  ES = 68;
+  /** Ethiopia */
+  ET = 69;
+  /** Finland */
+  FI = 70;
+  /** Fiji */
+  FJ = 71;
+  /** Falkland Islands (Malvinas) */
+  FK = 72;
+  /** Micronesia, Federated States of */
+  FM = 73;
+  /** Faroe Islands */
+  FO = 74;
+  /** France */
+  FR = 75;
+  /** Gabon */
+  GA = 76;
+  /** United Kingdom  England: */
+  GB = 77;
+  /** Grenada */
+  GD = 78;
+  /** Georgia */
+  GE = 79;
+  /** French Guiana */
+  GF = 80;
+  /** Guernsey */
+  GG = 81;
+  /** Ghana */
+  GH = 82;
+  /** Gibraltar */
+  GI = 83;
+  /** Greenland */
+  GL = 84;
+  /** Gambia */
+  GM = 85;
+  /** Guinea */
+  GN = 86;
+  /** Guadeloupe */
+  GP = 87;
+  /** Equatorial Guinea */
+  GQ = 88;
+  /** Greece */
+  GR = 89;
+  /** South Georgia and the South Sandwich Islands */
+  GS = 90;
+  /** Guatemala */
+  GT = 91;
+  /** Guam */
+  GU = 92;
+  /** Guinea */
+  GW = 93;
+  /** Guyana */
+  GY = 94;
+  /** Hong Kong */
+  HK = 95;
+  /** Heard Island and McDonald Islands */
+  HM = 96;
+  /** Honduras */
+  HN = 97;
+  /** Croatia */
+  HR = 98;
+  /** Haiti */
+  HT = 99;
+  /** Hungary */
+  HU = 100;
+  /** Indonesia */
+  ID = 101;
+  /** Ireland */
+  IE = 102;
+  /** Israel */
+  IL = 103;
+  /** Isle of Man */
+  IM = 104;
+  /** India */
+  IN = 105;
+  /** British Indian Ocean Territory */
+  IO = 106;
+  /** Iraq */
+  IQ = 107;
+  /** Iran, Islamic Republic of */
+  IR = 108;
+  /** Iceland */
+  IS = 109;
+  /** Italy */
+  IT = 110;
+  /** Jersey */
+  JE = 111;
+  /** Jamaica */
+  JM = 112;
+  /** Jordan */
+  JO = 113;
+  /** Japan */
+  JP = 114;
+  /** Kenya */
+  KE = 115;
+  /** Kyrgyzstan */
+  KG = 116;
+  /** Cambodia */
+  KH = 117;
+  /** Kiribati */
+  KI = 118;
+  /** Comoros */
+  KM = 119;
+  /** Saint Kitts and Nevis */
+  KN = 120;
+  /** Korea, Democratic People's Republic of */
+  KP = 121;
+  /** Korea, Republic of */
+  KR = 122;
+  /** Kuwait */
+  KW = 123;
+  /** Cayman Islands */
+  KY = 124;
+  /** Kazakhstan */
+  KZ = 125;
+  /** Lao People's Democratic Republic */
+  LA = 126;
+  /** Lebanon */
+  LB = 127;
+  /** Saint Lucia */
+  LC = 128;
+  /** Liechtenstein */
+  LI = 129;
+  /** Sri Lanka */
+  LK = 130;
+  /** Liberia */
+  LR = 131;
+  /** Lesotho */
+  LS = 132;
+  /** Lithuania */
+  LT = 133;
+  /** Luxembourg */
+  LU = 134;
+  /** Latvia */
+  LV = 135;
+  /** Libya */
+  LY = 136;
+  /** Morocco */
+  MA = 137;
+  /** Monaco */
+  MC = 138;
+  /** Moldova, Republic of */
+  MD = 139;
+  /** Montenegro */
+  ME = 140;
+  /** Saint Martin (French part) */
+  MF = 141;
+  /** Madagascar */
+  MG = 142;
+  /** Marshall Islands */
+  MH = 143;
+  /** Macedonia, the former Yugoslav Republic of */
+  MK = 144;
+  /** Mali */
+  ML = 145;
+  /** Myanmar */
+  MM = 146;
+  /** Mongolia */
+  MN = 147;
+  /** Macao */
+  MO = 148;
+  /** Northern Mariana Islands */
+  MP = 149;
+  /** Martinique */
+  MQ = 150;
+  /** Mauritania */
+  MR = 151;
+  /** Montserrat */
+  MS = 152;
+  /** Malta */
+  MT = 153;
+  /** Mauritius */
+  MU = 154;
+  /** Maldives */
+  MV = 155;
+  /** Malawi */
+  MW = 156;
+  /** Mexico */
+  MX = 157;
+  /** Malaysia */
+  MY = 158;
+  /** Mozambique */
+  MZ = 159;
+  /** Namibia */
+  NA = 160;
+  /** New Caledonia */
+  NC = 161;
+  /** Niger */
+  NE = 162;
+  /** Norfolk Island */
+  NF = 163;
+  /** Nigeria */
+  NG = 164;
+  /** Nicaragua */
+  NI = 165;
+  /** Netherlands[note */
+  NL = 166;
+  /** Norway */
+  NO = 167;
+  /** Nepal */
+  NP = 168;
+  /** Nauru */
+  NR = 169;
+  /** Niue */
+  NU = 170;
+  /** New Zealand */
+  NZ = 171;
+  /** Oman */
+  OM = 172;
+  /** Panama */
+  PA = 173;
+  /** Peru */
+  PE = 174;
+  /** French Polynesia */
+  PF = 175;
+  /** Papua New Guinea */
+  PG = 176;
+  /** Philippines */
+  PH = 177;
+  /** Pakistan */
+  PK = 178;
+  /** Poland */
+  PL = 179;
+  /** Saint Pierre and Miquelon */
+  PM = 180;
+  /** Pitcairn */
+  PN = 181;
+  /** Puerto Rico */
+  PR = 182;
+  /** Palestine, State of */
+  PS = 183;
+  /** Portugal */
+  PT = 184;
+  /** Palau */
+  PW = 185;
+  /** Paraguay */
+  PY = 186;
+  /** Qatar */
+  QA = 187;
+  /** Réunion */
+  RE = 188;
+  /** Romania */
+  RO = 189;
+  /** Serbia */
+  RS = 190;
+  /** Russian Federation */
+  RU = 191;
+  /** Rwanda */
+  RW = 192;
+  /** Saudi Arabia */
+  SA = 193;
+  /** Solomon Islands */
+  SB = 194;
+  /** Seychelles */
+  SC = 195;
+  /** Sudan */
+  SD = 196;
+  /** Sweden */
+  SE = 197;
+  /** Singapore */
+  SG = 198;
+  /** Saint Helena, Ascension and Tristan da Cunha */
+  SH = 199;
+  /** Slovenia */
+  SI = 200;
+  /** Svalbard and Jan Mayen */
+  SJ = 201;
+  /** Slovakia */
+  SK = 202;
+  /** Sierra Leone */
+  SL = 203;
+  /** San Marino */
+  SM = 204;
+  /** Senegal */
+  SN = 205;
+  /** Somalia */
+  SO = 206;
+  /** Suriname */
+  SR = 207;
+  /** South Sudan */
+  SS = 208;
+  /** Sao Tome and Principe */
+  ST = 209;
+  /** El Salvador */
+  SV = 210;
+  /** Sint Maarten (Dutch part) */
+  SX = 211;
+  /** Syrian Arab Republic */
+  SY = 212;
+  /** Swaziland */
+  SZ = 213;
+  /** Turks and Caicos Islands */
+  TC = 214;
+  /** Chad */
+  TD = 215;
+  /** French Southern Territories */
+  TF = 216;
+  /** Togo */
+  TG = 217;
+  /** Thailand */
+  TH = 218;
+  /** Tajikistan */
+  TJ = 219;
+  /** Tokelau */
+  TK = 220;
+  /** Timor */
+  TL = 221;
+  /** Turkmenistan */
+  TM = 222;
+  /** Tunisia */
+  TN = 223;
+  /** Tonga */
+  TO = 224;
+  /** Turkey */
+  TR = 225;
+  /** Trinidad and Tobago */
+  TT = 226;
+  /** Tuvalu */
+  TV = 227;
+  /** Taiwan, Province of China */
+  TW = 228;
+  /** Tanzania, United Republic of */
+  TZ = 229;
+  /** Ukraine */
+  UA = 230;
+  /** Uganda */
+  UG = 231;
+  /** United States Minor Outlying Islands */
+  UM = 232;
+  /** United States */
+  US = 233;
+  /** Uruguay */
+  UY = 234;
+  /** Uzbekistan */
+  UZ = 235;
+  /** Holy See (Vatican City State) */
+  VA = 236;
+  /** Saint Vincent and the Grenadines */
+  VC = 237;
+  /** Venezuela, Bolivarian Republic of */
+  VE = 238;
+  /** Virgin Islands, British */
+  VG = 239;
+  /** Virgin Islands, U.S. */
+  VI = 240;
+  /** Viet Nam */
+  VN = 241;
+  /** Vanuatu */
+  VU = 242;
+  /** Wallis and Futuna */
+  WF = 243;
+  /** Samoa */
+  WS = 244;
+  /** Yemen */
+  YE = 245;
+  /** Mayotte */
+  YT = 246;
+  /** South Africa */
+  ZA = 247;
+  /** Zambia */
+  ZM = 248;
+  /** Zimbabwe */
+  ZW = 249;
+}
+

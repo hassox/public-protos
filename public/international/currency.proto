@@ -1,0 +1,1553 @@
+package public.international;
+
+import "fender/v1/field_options.proto";
+
+/** Represents a money object */
+message Money {
+  
+  /** The currency type. You can't have money without it */
+
+  optional CurrencyCode currency_code = 1 [(fender.v1.fender_field).present = true];
+
+  /**
+   * The amount in the smallest unit of the currency 
+   * For example. USD would be cents.
+   */
+  optional int64 amount = 2 [ default = 0 ];
+}
+
+enum CurrencyCode {
+ /**
+   * United Arab Emirates dirham
+   *
+   * * United Arab Emirates
+   */
+  AED = 784 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Afghan afghani
+   *
+   * * Afghanistan
+   */
+  AFN = 971 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Albanian lek
+   *
+   * * Albania
+   */
+  ALL = 8 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Armenian dram
+   *
+   * * Armenia
+   */
+  AMD = 51 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Netherlands Antillean guilder
+   *
+   * * Curaçao (CW)
+   * * Sint Maarten (SX)
+   */
+  ANG = 532 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Angolan kwanza
+   *
+   * * Angola
+   */
+  AOA = 973 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Argentine peso
+   *
+   * * Argentina
+   */
+  ARS = 32 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Australian dollar
+   *
+   * * Australia
+   * * Christmas Island (CX)
+   * * Cocos (Keeling) Islands (CC)
+   * * Heard and McDonald Islands (HM)
+   * * Kiribati (KI)
+   * * Nauru (NR)
+   * * Norfolk Island (NF)
+   * * Tuvalu (TV)
+   * * and Australian Antarctic Territory
+   */
+  AUD = 36 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Aruban florin
+   *
+   * * Aruba
+   */
+  AWG = 533 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Azerbaijani manat
+   *
+   * * Azerbaijan
+   */
+  AZN = 944 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Bosnia and Herzegovina convertible mark
+   *
+   * * Bosnia and Herzegovina
+   */
+  BAM = 977 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Barbados dollar
+   *
+   * * Barbados
+   */
+  BBD = 52 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Bangladeshi taka
+   *
+   * * Bangladesh
+   */
+  BDT = 50 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Bulgarian lev
+   *
+   * * Bulgaria
+   */
+  BGN = 975 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Bahraini dinar
+   *
+   * * Bahrain
+   */
+  BHD = 48 ;//[(public.common.international.currency_major_exp = -3];
+
+
+  /**
+   * Burundian franc
+   *
+   * * Burundi
+   */
+  BIF = 108;
+
+
+  /**
+   * Bermudian dollar
+   *
+   * * Bermuda
+   */
+  BMD = 60 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Brunei dollar
+   *
+   * * Brunei
+   * * auxiliary in  Singapore (SG)
+   */
+  BND = 96 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Boliviano
+   *
+   * * Bolivia
+   */
+  BOB = 68 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Bolivian Mvdol (funds code)
+   *
+   * * Bolivia
+   */
+  BOV = 984 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Brazilian real
+   *
+   * * Brazil
+   */
+  BRL = 986 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Bahamian dollar
+   *
+   * * Bahamas
+   */
+  BSD = 44 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Bhutanese ngultrum
+   *
+   * * Bhutan
+   */
+  BTN = 64 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Botswana pula
+   *
+   * * Botswana
+   */
+  BWP = 72 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Belarusian ruble
+   *
+   * * Belarus
+   */
+  BYR = 974;
+
+
+  /**
+   * Belize dollar
+   *
+   * * Belize
+   */
+  BZD = 84 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Canadian dollar
+   *
+   * * Canada
+   */
+  CAD = 124 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Congolese franc
+   *
+   * * Democratic Republic of Congo
+   */
+  CDF = 976 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * WIR Euro (complementary currency)
+   *
+   * * Switzerland
+   */
+  CHE = 947 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Swiss franc
+   *
+   * * Switzerland
+   * * Liechtenstein (LI)
+   */
+  CHF = 756 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * WIR Franc (complementary currency)
+   *
+   * * Switzerland
+   */
+  CHW = 948 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Unidad de Fomento (funds code)
+   *
+   * * Chile
+   */
+  CLF = 990;
+
+
+  /**
+   * Chilean peso
+   *
+   * * Chile
+   */
+  CLP = 152;
+
+
+  /**
+   * Chinese yuan
+   *
+   * * China
+   */
+  CNY = 156 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Colombian peso
+   *
+   * * Colombia
+   */
+  COP = 170 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Unidad de Valor Real (UVR) (funds code)[7]
+   *
+   * * Colombia
+   */
+  COU = 970 ;//[(public.common.international.currency_major_exp = -4];
+
+
+  /**
+   * Costa Rican colon
+   *
+   * * Costa Rica
+   */
+  CRC = 188 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Cuban convertible peso
+   *
+   * * Cuba
+   */
+  CUC = 931 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Cuban peso
+   *
+   * * Cuba
+   */
+  CUP = 192 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Cape Verde escudo
+   *
+   * * Cape Verde
+   */
+  CVE = 132;
+
+
+  /**
+   * Czech koruna
+   *
+   * * Czech Republic
+   */
+  CZK = 203 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Djiboutian franc
+   *
+   * * Djibouti
+   */
+  DJF = 262;
+
+
+  /**
+   * Danish krone
+   *
+   * * Denmark
+   * * Faroe Islands (FO)
+   * * Greenland (GL)
+   */
+  DKK = 208 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Dominican peso
+   *
+   * * Dominican Republic
+   */
+  DOP = 214 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Algerian dinar
+   *
+   * * Algeria
+   */
+  DZD = 12 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Egyptian pound
+   *
+   * * Egypt
+   * * auxiliary in Gaza Strip
+   */
+  EGP = 818 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Eritrean nakfa
+   *
+   * * Eritrea
+   */
+  ERN = 232 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Ethiopian birr
+   *
+   * * Ethiopia
+   */
+  ETB = 230 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Euro
+   *
+   * * Andorra (AD)
+   * * Austria (AT)
+   * * Belgium (BE)
+   * * Cyprus (CY) except  Northern Cyprus
+   * * Estonia (EE)
+   * * Finland (FI)
+   * * France (FR)
+   * * Germany (DE)
+   * * Greece (GR)
+   * * Ireland (IE)
+   * * Italy (IT)
+   * * Kosovo
+   * * Latvia (LV)
+   * * Luxembourg (LU)
+   * * Malta (MT)
+   * * Martinique (MQ)
+   * * Mayotte (YT)
+   * * Monaco (MC)
+   * * Montenegro (ME)
+   * * Netherlands (NL)
+   * * Portugal (PT)
+   * * Reunion (RE)
+   * * San Marino (SM)
+   * * Saint Barthélemy (BL)
+   * * Slovakia (SK)
+   * * Slovenia (SI)
+   * * Spain (ES)
+   * * Saint Pierre and Miquelon (PM)
+   * * Vatican City (VA); see Eurozone
+   */
+  EUR = 978 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Fiji dollar
+   *
+   * * Fiji
+   */
+  FJD = 242 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Falkland Islands pound
+   *
+   * * Falkland Islands (pegged to GBP 1:1)
+   */
+  FKP = 238 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Pound sterling
+   *
+   * * United Kingdom
+   * * the  Isle of Man (IM
+   * * see Manx pound)
+   * * Jersey (JE
+   * * see Jersey pound)
+   * * Guernsey (GG
+   * * see Guernsey pound)
+   * * South Georgia and the South Sandwich Islands (GS)
+   * * British Indian Ocean Territory (IO) (also uses USD)
+   * * Tristan da Cunha (SH-TA)
+   * * and  British Antarctic Territory
+   */
+  GBP = 826 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Georgian lari
+   *
+   * * Georgia (country) (except Abkhazia (GE-AB) and South Ossetia)
+   */
+  GEL = 981 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Ghanaian cedi
+   *
+   * * Ghana
+   */
+  GHS = 936 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Gibraltar pound
+   *
+   * * Gibraltar
+   */
+  GIP = 292 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Gambian dalasi
+   *
+   * * Gambia
+   */
+  GMD = 270 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Guinean franc
+   *
+   * * Guinea
+   */
+  GNF = 324;
+
+
+  /**
+   * Guatemalan quetzal
+   *
+   * * Guatemala
+   */
+  GTQ = 320 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Guyanese dollar
+   *
+   * * Guyana
+   */
+  GYD = 328 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Hong Kong dollar
+   *
+   * * Hong Kong
+   * * Macao (MO)
+   */
+  HKD = 344 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Honduran lempira
+   *
+   * * Honduras
+   */
+  HNL = 340 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Croatian kuna
+   *
+   * * Croatia
+   */
+  HRK = 191 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Haitian gourde
+   *
+   * * Haiti
+   */
+  HTG = 332 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Hungarian forint
+   *
+   * * Hungary
+   */
+  HUF = 348 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Indonesian rupiah
+   *
+   * * Indonesia
+   */
+  IDR = 360 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Israeli new shekel
+   *
+   * * Israel
+   * * State of Palestine (PS)[8]
+   */
+  ILS = 376 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Indian rupee
+   *
+   * * India
+   */
+  INR = 356 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Iraqi dinar
+   *
+   * * Iraq
+   */
+  IQD = 368 ;//[(public.common.international.currency_major_exp = -3];
+
+
+  /**
+   * Iranian rial
+   *
+   * * Iran
+   */
+  IRR = 364 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Icelandic króna
+   *
+   * * Iceland
+   */
+  ISK = 352;
+
+
+  /**
+   * Jamaican dollar
+   *
+   * * Jamaica
+   */
+  JMD = 388 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Jordanian dinar
+   *
+   * * Jordan
+   * * auxiliary in West Bank
+   */
+  JOD = 400 ;//[(public.common.international.currency_major_exp = -3];
+
+
+  /**
+   * Japanese yen
+   *
+   * * Japan
+   */
+  JPY = 392;
+
+
+  /**
+   * Kenyan shilling
+   *
+   * * Kenya
+   */
+  KES = 404 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Kyrgyzstani som
+   *
+   * * Kyrgyzstan
+   */
+  KGS = 417 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Cambodian riel
+   *
+   * * Cambodia
+   */
+  KHR = 116 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Comoro franc
+   *
+   * * Comoros
+   */
+  KMF = 174;
+
+
+  /**
+   * North Korean won
+   *
+   * * North Korea
+   */
+  KPW = 408 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * South Korean won
+   *
+   * * South Korea
+   */
+  KRW = 410;
+
+
+  /**
+   * Kuwaiti dinar
+   *
+   * * Kuwait
+   */
+  KWD = 414 ;//[(public.common.international.currency_major_exp = -3];
+
+
+  /**
+   * Cayman Islands dollar
+   *
+   * * Cayman Islands
+   */
+  KYD = 136 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Kazakhstani tenge
+   *
+   * * Kazakhstan
+   */
+  KZT = 398 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Lao kip
+   *
+   * * Laos
+   */
+  LAK = 418 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Lebanese pound
+   *
+   * * Lebanon
+   */
+  LBP = 422 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Sri Lankan rupee
+   *
+   * * Sri Lanka
+   */
+  LKR = 144 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Liberian dollar
+   *
+   * * Liberia
+   */
+  LRD = 430 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Lesotho loti
+   *
+   * * Lesotho
+   */
+  LSL = 426 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Lithuanian litas
+   *
+   * * Lithuania
+   */
+  LTL = 440 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Libyan dinar
+   *
+   * * Libya
+   */
+  LYD = 434 ;//[(public.common.international.currency_major_exp = -3];
+
+
+  /**
+   * Moroccan dirham
+   *
+   * * Morocco
+   */
+  MAD = 504 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Moldovan leu
+   *
+   * * Moldova (except  Transnistria)
+   */
+  MDL = 498 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Malagasy ariary
+   *
+   * * Madagascar
+   */
+  MGA = 969 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Macedonian denar
+   *
+   * * Macedonia
+   */
+  MKD = 807 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Myanmar kyat
+   *
+   * * Myanmar
+   */
+  MMK = 104 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Mongolian tugrik
+   *
+   * * Mongolia
+   */
+  MNT = 496 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Macanese pataca
+   *
+   * * Macao
+   */
+  MOP = 446 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Mauritanian ouguiya
+   *
+   * * Mauritania
+   */
+  MRO = 478 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Mauritian rupee
+   *
+   * * Mauritius
+   */
+  MUR = 480 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Maldivian rufiyaa
+   *
+   * * Maldives
+   */
+  MVR = 462 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Malawian kwacha
+   *
+   * * Malawi
+   */
+  MWK = 454 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Mexican peso
+   *
+   * * Mexico
+   */
+  MXN = 484 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Mexican Unidad de Inversion (UDI) (funds code)
+   *
+   * * Mexico
+   */
+  MXV = 979 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Malaysian ringgit
+   *
+   * * Malaysia
+   */
+  MYR = 458 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Mozambican metical
+   *
+   * * Mozambique
+   */
+  MZN = 943 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Namibian dollar
+   *
+   * * Namibia
+   */
+  NAD = 516 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Nigerian naira
+   *
+   * * Nigeria
+   */
+  NGN = 566 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Nicaraguan córdoba
+   *
+   * * Nicaragua
+   */
+  NIO = 558 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Norwegian krone
+   *
+   * * Norway
+   * * Svalbard and  Jan Mayen (SJ)
+   * * Bouvet Island (BV)
+   * * Queen Maud Land
+   * * Peter I Island
+   */
+  NOK = 578 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Nepalese rupee
+   *
+   * * Nepal
+   */
+  NPR = 524 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * New Zealand dollar
+   *
+   * * New Zealand
+   * * Cook Islands (CK)
+   * * Niue (NU)
+   * * Pitcairn (PN; see also Pitcairn Islands dollar)
+   * * Tokelau (TK)
+   * * Ross Dependency
+   */
+  NZD = 554 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Omani rial
+   *
+   * * Oman
+   */
+  OMR = 512 ;//[(public.common.international.currency_major_exp = -3];
+
+
+  /**
+   * Panamanian balboa
+   *
+   * * Panama
+   */
+  PAB = 590 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Peruvian nuevo sol
+   *
+   * * Peru
+   */
+  PEN = 604 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Papua New Guinean kina
+   *
+   * * Papua New Guinea
+   */
+  PGK = 598 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Philippine peso
+   *
+   * * Philippines
+   */
+  PHP = 608 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Pakistani rupee
+   *
+   * * Pakistan
+   */
+  PKR = 586 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Polish złoty
+   *
+   * * Poland
+   */
+  PLN = 985 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Paraguayan guaraní
+   *
+   * * Paraguay
+   */
+  PYG = 600;
+
+
+  /**
+   * Qatari riyal
+   *
+   * * Qatar
+   */
+  QAR = 634 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Romanian new leu
+   *
+   * * Romania
+   */
+  RON = 946 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Serbian dinar
+   *
+   * * Serbia
+   */
+  RSD = 941 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Russian ruble
+   *
+   * * Russia
+   * * Abkhazia (GE-AB)
+   * * South Ossetia
+   * * Crimea
+   */
+  RUB = 643 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Rwandan franc
+   *
+   * * Rwanda
+   */
+  RWF = 646;
+
+
+  /**
+   * Saudi riyal
+   *
+   * * Saudi Arabia
+   */
+  SAR = 682 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Solomon Islands dollar
+   *
+   * * Solomon Islands
+   */
+  SBD = 90 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Seychelles rupee
+   *
+   * * Seychelles
+   */
+  SCR = 690 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Sudanese pound
+   *
+   * * Sudan
+   */
+  SDG = 938 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Swedish krona/kronor
+   *
+   * * Sweden
+   */
+  SEK = 752 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Singapore dollar
+   *
+   * * Singapore
+   * * auxiliary in  Brunei (BN)
+   */
+  SGD = 702 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Saint Helena pound
+   *
+   * * Saint Helena (SH-SH)
+   * * Ascension Island (SH-AC) (pegged to GBP 1:1)
+   */
+  SHP = 654 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Sierra Leonean leone
+   *
+   * * Sierra Leone
+   */
+  SLL = 694 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Somali shilling
+   *
+   * * Somalia (except  Somaliland)
+   */
+  SOS = 706 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Surinamese dollar
+   *
+   * * Suriname
+   */
+  SRD = 968 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * South Sudanese pound
+   *
+   * * South Sudan
+   */
+  SSP = 728 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * São Tomé and Príncipe dobra
+   *
+   * * São Tomé and Príncipe
+   */
+  STD = 678 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Syrian pound
+   *
+   * * Syria
+   */
+  SYP = 760 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Swazi lilangeni
+   *
+   * * Swaziland
+   */
+  SZL = 748 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Thai baht
+   *
+   * * Thailand
+   */
+  THB = 764 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Tajikistani somoni
+   *
+   * * Tajikistan
+   */
+  TJS = 972 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Turkmenistani manat
+   *
+   * * Turkmenistan
+   */
+  TMT = 934 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Tunisian dinar
+   *
+   * * Tunisia
+   */
+  TND = 788 ;//[(public.common.international.currency_major_exp = -3];
+
+
+  /**
+   * Tongan paʻanga
+   *
+   * * Tonga
+   */
+  TOP = 776 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Turkish lira
+   *
+   * * Turkey
+   * * Northern Cyprus
+   */
+  TRY = 949 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Trinidad and Tobago dollar
+   *
+   * * Trinidad and Tobago
+   */
+  TTD = 780 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * New Taiwan dollar
+   *
+   * * Taiwan
+   */
+  TWD = 901 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Tanzanian shilling
+   *
+   * * Tanzania
+   */
+  TZS = 834 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Ukrainian hryvnia
+   *
+   * * Ukraine
+   */
+  UAH = 980 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Ugandan shilling
+   *
+   * * Uganda
+   */
+  UGX = 800;
+
+
+  /**
+   * United States dollar
+   *
+   * * United States
+   * * American Samoa (AS)
+   * * Barbados (BB) (as well as Barbados Dollar)
+   * * Bermuda (BM) (as well as Bermudian Dollar)
+   * * British Indian Ocean Territory (IO) (also uses GBP)
+   * * British Virgin Islands (VG)
+   * * Caribbean Netherlands (BQ - Bonaire
+   * * Sint Eustatius and Saba)
+   * * Ecuador (EC)
+   * * El Salvador (SV)
+   * * Guam (GU)
+   * * Haiti (HT)
+   * * Marshall Islands (MH)
+   * * Federated States of Micronesia (FM)
+   * * Northern Mariana Islands (MP)
+   * * Palau (PW)
+   * * Panama (PA)
+   * * Puerto Rico (PR)
+   * * Timor-Leste (TL)
+   * * Turks and Caicos Islands (TC)
+   * * U.S. Virgin Islands (VI)
+   * * Zimbabwe (ZW)
+   */
+  USD = 840 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * United States dollar (next day) (funds code)
+   *
+   * * United States
+   */
+  USN = 997 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * United States dollar (same day) (funds code)[10]
+   *
+   * * United States
+   */
+  USS = 998 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code)
+   *
+   * * Uruguay
+   */
+  UYI = 940;
+
+
+  /**
+   * Uruguayan peso
+   *
+   * * Uruguay
+   */
+  UYU = 858 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Uzbekistan som
+   *
+   * * Uzbekistan
+   */
+  UZS = 860 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Venezuelan bolívar
+   *
+   * * Venezuela
+   */
+  VEF = 937 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Vietnamese dong
+   *
+   * * Vietnam
+   */
+  VND = 704;
+
+
+  /**
+   * Vanuatu vatu
+   *
+   * * Vanuatu
+   */
+  VUV = 548;
+
+
+  /**
+   * Samoan tala
+   *
+   * * Samoa
+   */
+  WST = 882 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * CFA franc BEAC
+   *
+   * * Cameroon (CM)
+   * * Central African Republic (CF)
+   * * Republic of the Congo (CG)
+   * * Chad (TD)
+   * * Equatorial Guinea (GQ)
+   * * Gabon (GA)
+   */
+  XAF = 950;
+
+
+  /**
+   * Silver (one troy ounce)
+   *
+   */
+  XAG = 961;
+
+
+  /**
+   * Gold (one troy ounce)
+   *
+   */
+  XAU = 959;
+
+
+  /**
+   * European Composite Unit (EURCO) (bond market unit)
+   *
+   */
+  XBA = 955;
+
+
+  /**
+   * European Monetary Unit (E.M.U.-6) (bond market unit)
+   *
+   */
+  XBB = 956;
+
+
+  /**
+   * European Unit of Account 9 (E.U.A.-9) (bond market unit)
+   *
+   */
+  XBC = 957;
+
+
+  /**
+   * European Unit of Account 17 (E.U.A.-17) (bond market unit)
+   *
+   */
+  XBD = 958;
+
+
+  /**
+   * East Caribbean dollar
+   *
+   * * Anguilla (AI)
+   * * Antigua and Barbuda (AG)
+   * * Dominica (DM)
+   * * Grenada (GD)
+   * * Montserrat (MS)
+   * * Saint Kitts and Nevis (KN)
+   * * Saint Lucia (LC)
+   * * Saint Vincent and the Grenadines (VC)
+   */
+  XCD = 951 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Special drawing rights
+   *
+   * * International Monetary Fund
+   */
+  XDR = 960;
+
+
+  /**
+   * CFA franc BCEAO
+   *
+   * * Benin (BJ)
+   * * Burkina Faso (BF)
+   * * Côte d'Ivoire (CI)
+   * * Guinea-Bissau (GW)
+   * * Mali (ML)
+   * * Niger (NE)
+   * * Senegal (SN)
+   * * Togo (TG)
+   */
+  XOF = 952;
+
+
+  /**
+   * Palladium (one troy ounce)
+   *
+   */
+  XPD = 964;
+
+
+  /**
+   * CFP franc (franc Pacifique)
+   *
+   * * French territories of the Pacific Ocean:  French Polynesia (PF)
+   * * New Caledonia (NC)
+   * * Wallis and Futuna (WF)
+   */
+  XPF = 953;
+
+
+  /**
+   * Platinum (one troy ounce)
+   *
+   */
+  XPT = 962;
+
+
+  /**
+   * SUCRE
+   *
+   * * SISTEMA UNITARIO DE COMPENSACION REGIONAL DE PAGOS "SUCRE" [11]
+   */
+  XSU = 994;
+
+
+  /**
+   * Code reserved for testing purposes
+   *
+   */
+  XTS = 963;
+
+
+  /**
+   * ADB Unit of Account
+   *
+   * * African Development Bank [12]
+   */
+  XUA = 965;
+
+
+  /**
+   * No currency
+   *
+   */
+  XXX = 999;
+
+
+  /**
+   * Yemeni rial
+   *
+   * * Yemen
+   */
+  YER = 886 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * South African rand
+   *
+   * * South Africa
+   */
+  ZAR = 710 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Zambian kwacha
+   *
+   * * Zambia
+   */
+  ZMW = 967 ;//[(public.common.international.currency_major_exp = -2];
+
+
+  /**
+   * Zimbabwe dollar
+   *
+   * * Zimbabwe
+   */
+  ZWD = 932 ;//[(public.common.international.currency_major_exp = -2];
+
+}
