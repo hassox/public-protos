@@ -14,6 +14,5 @@ When using protob create a protos.json file and include:
     [
       { "git": "https://github.com/hassox/fender" },
       { "git": "https://github.com/hassox/google-protos" }
-      { "git": "https://github.com/hassox/spotify-protos" }
     ]
 
