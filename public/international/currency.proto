@@ -1,20 +1,5 @@
 package public.international;
 
-import "fender/v1/field_options.proto";
-
-/** Represents a money object */
-message Money {
-   /**
-   * The amount in the smallest unit of the currency 
-   * For example. USD would be cents.
-   */
-  optional int64 amount = 2 [ default = 0 ];
-
-  /** The currency type. You can't have money without it */
-
-  optional CurrencyCode currency_code = 3 [(fender.v1.fender_field).present = true];
-}
-
 enum CurrencyCode {
  /**
    * United Arab Emirates dirham
